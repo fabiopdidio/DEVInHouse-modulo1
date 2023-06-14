@@ -2,13 +2,16 @@
 - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento.
 - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do alistamento*/
 
-var anoDeNascimento = Number(prompt(`Bem-vindo ao verificador de situação de alistamento militar.
-Digite abaixo o ano do seu nascimento:`))
-var tempoParaAlistamento = anoDeNascimento + 18
+var anoDeNascimento = Number(
+  prompt(`Bem-vindo ao verificador de situação de alistamento militar.
+Digite abaixo o ano do seu nascimento:`)
+);
+var tempoParaAlistamento = anoDeNascimento + 18;
 
 if (2023 - anoDeNascimento < 18) {
-  console.log(`Ainda faltam ${anoDeNascimento+18-2023} anos para o alistamento`)
-}
-else {
-  console.log(`Você deveria ter se alistado em ${tempoParaAlistamento}.`)
+  console.log(
+    `Ainda faltam ${anoDeNascimento + 18 - 2023} anos para o alistamento`
+  );
+} else {
+  console.log(`Você deveria ter se alistado em ${tempoParaAlistamento}.`);
 }
