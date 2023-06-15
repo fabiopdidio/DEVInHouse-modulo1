@@ -1,0 +1,13 @@
+:root {
+    font-size: 20px;
+  }
+  
+  html {
+    height: 100vh;
+  }
+  
+  body {
+    color: black;
+    background-color:white;
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+  }

@@ -1,0 +1,53 @@
+<!--Formulário de Cadastro
+Construir uma página HTML com um formulário de cadastro de pessoas com os seguintes campos: nome, data de nascimento, cpf e município.
+Para o campo de município, utilize uma caixa de seleção (select) com o nome de alguns municípios como opções.
+Utilize a figura em anexo como base para o layout.
+Dicas:
+a) Use os respectivos tipos de campos de input para cada campo a ser cadastrado.
+b) O intuito do exercício é além de praticar tags html, exercitar o uso de seletores e propriedades CSS e posicionamento com flexbox.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="Estilos.css" />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">Formulário de Cadastro</h1>
+      <h2>Preencha os dados</h2>
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" />
+      </div>
+      <div>
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" placeholder="DD/MM/AAAA" />
+      </div>
+      <div>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" placeholder="000.000.000-00" />
+      </div>
+      <div>
+        <label for="municipio">Município:</label>
+        <select id="municipio">
+          <option value="">Selecione o município</option>
+          <option value="municipio1">Município 1</option>
+          <option value="municipio2">Município 2</option>
+          <option value="municipio3">Município 3</option>
+        </select>
+      </div>
+    </div>
+  </body>
+  <footer>Desenvolvido por Fábio Didio</footer>
+</html>
