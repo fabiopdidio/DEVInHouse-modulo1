@@ -12,36 +12,28 @@ b) O intuito do exercício é além de praticar tags html, exercitar o uso de se
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Cadastro</title>
-    <link rel="stylesheet" href="Estilos.css" />
-    <style>
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
     <div class="container">
-      <h1 style="text-align: center">Formulário de Cadastro</h1>
+      <h1>Formulário de Cadastro</h1>
       <h2>Preencha os dados</h2>
-      <div>
+      <div class="form-group">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" placeholder="Digite seu nome" />
       </div>
-      <div>
+      <div class="form-group">
         <label for="nascimento">Data de Nascimento:</label>
         <input type="date" id="nascimento" placeholder="DD/MM/AAAA" />
       </div>
-      <div>
+      <div class="form-group">
         <label for="cpf">CPF:</label>
         <input type="text" id="cpf" placeholder="000.000.000-00" />
       </div>
-      <div>
+      <div class="form-group">
         <label for="municipio">Município:</label>
         <select id="municipio">
-          <option value="">Selecione o município</option>
+          <option value="">Selecione seu município</option>
           <option value="municipio1">Município 1</option>
           <option value="municipio2">Município 2</option>
           <option value="municipio3">Município 3</option>
@@ -49,5 +41,4 @@ b) O intuito do exercício é além de praticar tags html, exercitar o uso de se
       </div>
     </div>
   </body>
-  <footer>Desenvolvido por Fábio Didio</footer>
 </html>
