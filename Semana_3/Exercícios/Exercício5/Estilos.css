@@ -14,6 +14,7 @@
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
@@ -35,6 +36,10 @@ hr {
   align-items: center;
   padding-bottom: 20px;
   margin-top: 30px;
+}
+
+.text {
+  text-align: center;
 }
 
 .container h1,
@@ -76,4 +81,14 @@ label {
 .input-wrapper input[type="text"]::placeholder {
   color: white;
   opacity: 0.5;
+}
+
+.backgrounded {
+  color: white;
+  background-color: rgb(84, 83, 83);
+  padding: 6px;
+  width: 300px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
 }
