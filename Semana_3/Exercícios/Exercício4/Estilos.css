@@ -5,7 +5,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-color: whitesmoke;
 }
 
 .container {
@@ -14,9 +14,9 @@ body {
   align-items: center;
   width: 400px;
   padding: 20px;
-  background-color: #fff;
+  background-color: white;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px grey;
 }
 
 h1 {
@@ -37,11 +37,30 @@ input[type="date"],
 select {
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
+  text-align: center; 
+  min-width: 200px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  outline: 2px solid lightskyblue
 }
 
 .form-group {
   margin-bottom: 10px;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+  }
