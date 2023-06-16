@@ -1,11 +1,36 @@
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  color: red;
-  font-weight: bold;
-  padding: 10px;
-}
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+  }
+  
+  .top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    padding: 8px;
+    margin-left: 5px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-right select {
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+    font-size: smaller;
+  }
+  
+  .top-right label {
+    background-color: red;
+    padding: 2px 5px;
+    border-radius: 2px;
+  }
 
 .header p {
   margin: 0;
@@ -25,8 +50,8 @@ body {
 hr {
   margin-top: 20px;
   border: none;
-  height: 1px;
-  background-color: grey;
+  height: 2px;
+  background-color: rgb(30, 30, 65);
   width: 100vw;
 }
 
@@ -53,6 +78,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  padding: 5;
 }
 
 .input-wrapper {
@@ -63,7 +89,7 @@ h2 {
 label {
   color: white;
   background-color: red;
-  padding: 5px;
+  padding: 9px;
   margin-left: 5px;
   border-radius: 2px;
 }
@@ -71,7 +97,7 @@ label {
 .input-wrapper input[type="text"] {
   background-color: white;
   color: black;
-  padding: 6px;
+  padding: 10px;
   width: 300px;
   font-weight: bold;
   border: none;
@@ -85,10 +111,8 @@ label {
 
 .backgrounded {
   color: white;
-  background-color: rgb(84, 83, 83);
+  background-color: rgb(49, 49, 49);
   padding: 6px;
-  width: 300px;
   font-weight: bold;
-  border: none;
   border-radius: 2px;
 }
