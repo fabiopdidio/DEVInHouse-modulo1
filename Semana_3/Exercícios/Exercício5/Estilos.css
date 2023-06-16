@@ -1,0 +1,79 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.header p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: rgb(189, 187, 187);
+  background-color: black;
+}
+
+hr {
+  margin-top: 20px;
+  border: none;
+  height: 1px;
+  background-color: grey;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+.container h1,
+h2 {
+  color: white;
+  margin: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  color: white;
+  background-color: red;
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 2px;
+}
+
+.input-wrapper input[type="text"] {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  width: 300px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+}
+
+.input-wrapper input[type="text"]::placeholder {
+  color: white;
+  opacity: 0.5;
+}
