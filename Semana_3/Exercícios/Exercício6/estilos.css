@@ -9,6 +9,7 @@ div,
 header,
 main,
 footer,
+form,
 p,
 span,
 h1,
@@ -17,7 +18,10 @@ h3,
 h4,
 h5,
 h6,
-a {
+a,
+ul,
+ol,
+li {
   margin: 0;
   border: 0;
   padding: 0;
@@ -48,7 +52,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  background-color: #000080;
+  background-color: navy;
 }
 
 .logo-text {
@@ -73,4 +77,114 @@ nav > a:hover {
 
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+#cards-container {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+#cards-container > li {
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  flex-direction: column;
+  border-radius: 16px;
+  border: 2px solid navy;
+  background-color: white;
+}
+
+#cards-container > li > img {
+  width: 320px;
+  border-radius: 8px;
+  aspect-ratio: 4/3;
+  display: block;
+  background-color: #e8e8e8;
+}
+
+#cards-container > li > h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: italic;
+  color: navy;
+}
+
+#cards-container > li > .card-details {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+#cards-container > li > .card-details > .price {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#cards-container > li > .card-details > .price > h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+#cards-container > li > .card-details > .price > p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#cards-container > li > .card-details > a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 1046px;
+  max-width: calc(100vw - 64px);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: navy;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+form input {
+  border-color: gray;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+form input[type="text"] {
+  flex-grow: 1;
+}
+
+form input[type="date"] {
+  min-width: 128px;
+}
+
+form button[type="submit"] {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: GRE;
 }

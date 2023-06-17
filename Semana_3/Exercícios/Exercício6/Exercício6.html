@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIAJE-TECH | M1-S03-E06</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div id="page-container">
+      <header>
+        <h1 class="logo-text">VIAJE-TECH</h1>
+
+        <nav>
+          <a href="">Destinos</a>
+          <a href="">Pacotes</a>
+          <a href="">Sobre nós</a>
+          <a href="">Contato</a>
+        </nav>
+      </header>
+
+      <main>
+        <ul id="cards-container">
+          <li>
+            <img src="FLORIPA.jpg" alt="Imagem 1" />
+
+            <h3>Florianópolis</h3>
+
+            <div class="card-details">
+              <div class="price">
+                <h4>Preço a partir de</h4>
+                <p>BCT 0,145242</p>
+              </div>
+
+              <a href="">Visualizar &gt;&gt;</a>
+            </div>
+          </li>
+
+          <li>
+            <img src="CURITIBA.jpg" alt="Imagem 2" />
+
+            <h3>Curitiba</h3>
+
+            <div class="card-details">
+              <div class="price">
+                <h4>Preço a partir de</h4>
+                <p>BCT 0.13876</p>
+              </div>
+
+              <a href="">Visualizar &gt;&gt;</a>
+            </div>
+          </li>
+
+          <li>
+            <img src="TATOOINE.jpg" alt="Imagem 3" />
+
+            <h3>Tatooine</h3>
+
+            <div class="card-details">
+              <div class="price">
+                <h4>Preço a partir de</h4>
+                <p>BCT 2,6756</p>
+              </div>
+
+              <a href="">Visualizar &gt;&gt;</a>
+            </div>
+          </li>
+        </ul>
+
+        <form action="">
+          <input type="text" name="origem" placeholder="Informe a Origem" />
+          <input type="text" name="destino" placeholder="Informe o Destino" />
+          <div>
+            <label for="id-data-ida">Ida</label>
+            <input
+              type="date"
+              id="id-data-ida"
+              name="data-ida"
+              placeholder="dd-mm-aaaa"
+            />
+          </div>
+          <div>
+            <label for="id-data-volta">Volta</label>
+            <input
+              type="date"
+              name="id-data-volta"
+              name="data-volta"
+              placeholder="dd-mm-aaaa"
+            />
+          </div>
+          <button type="submit">Procurar</button>
+        </form>
+      </main>
+
+      <footer>
+        <p class="logo-text">Viaje-Tech</p>
+
+        <p>
+          &copy; 2023 &middot; Agência de Turismo &middot; Rua Fulano de Tal, N 123, CEP
+          99999-999 &middot; Florianópolis - SC
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
