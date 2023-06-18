@@ -1,156 +1,166 @@
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes padrão para todo o documento */
 }
 
 .top-left {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-weight: bold;
-  color: red;
+  position: absolute; /* Posiciona o elemento de forma absoluta */
+  top: 10px; /* Define a distância de 10 pixels a partir da borda superior */
+  left: 10px; /* Define a distância de 10 pixels a partir da borda esquerda */
+  font-weight: bold; /* Define o estilo da fonte como negrito */
+  color: red; /* Define a cor do texto como vermelho */
 }
 
 .top-right {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: white;
-  padding: 8px;
-  margin-left: 5px;
-  font-size: small;
-  display: flex;
-  align-items: center;
+  position: absolute; /* Posiciona o elemento de forma absoluta */
+  top: 10px; /* Define a distância de 10 pixels a partir da borda superior */
+  right: 10px; /* Define a distância de 10 pixels a partir da borda direita */
+  color: white; /* Define a cor do texto como branco */
+  padding: 8px; /* Adiciona um espaçamento interno de 8 pixels */
+  margin-left: 5px; /* Define uma margem esquerda de 5 pixels */
+  font-size: small; /* Define o tamanho da fonte como pequeno */
+  display: flex; /* Habilita o uso de flexbox para o elemento */
+  align-items: center; /* Centraliza verticalmente os itens dentro do elemento */
 }
 
 .top-right select {
-  margin-right: 5px;
-  background-color: black;
-  color: white;
-  font-size: smaller;
+  margin-right: 5px; /* Define uma margem direita de 5 pixels para o elemento select dentro da classe .top-right */
+  background-color: black; /* Define a cor de fundo como preto */
+  color: white; /* Define a cor do texto como branco */
+  font-size: smaller; /* Define o tamanho da fonte como menor */
 }
 
 .top-right label {
-  background-color: red;
-  padding: 2px 5px;
-  border-radius: 2px;
+  background-color: red; /* Define a cor de fundo como vermelho */
+  padding: 2px 5px; /* Adiciona um espaçamento interno de 2 pixels acima e abaixo, e 5 pixels à esquerda e à direita */
+  border-radius: 2px; /* Define um raio de borda de 2 pixels, criando cantos arredondados */
 }
 
 .header p {
-  margin: 0;
+  margin: 0; /* Remove a margem em torno do elemento <p> dentro da classe .header */
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  color: rgb(189, 187, 187);
-  background-color: black;
+  margin: 0; /* Remove a margem em torno do corpo do documento */
+  display: flex; /* Habilita o uso de flexbox para o corpo do documento */
+  flex-direction: column; /* Define a direção da disposição dos elementos como vertical */
+  justify-content: center; /* Centraliza verticalmente os elementos dentro do corpo do documento */
+  align-items: center; /* Centraliza horizontalmente os elementos dentro do corpo do documento */
+  font-family: Arial, sans-serif; /* Define a família de fontes padrão para o corpo do documento */
+  color: rgb(189, 187, 187); /* Define a cor do texto como um tom de cinza */
+  background-color: black; /* Define a cor de fundo como preto */
 }
 
 hr {
-  margin-top: 20px;
-  border: none;
-  height: 2px;
-  background-color: rgb(30, 30, 65);
-  width: 100vw;
+  margin-top: 20px; /* Define uma margem superior de 20 pixels para o elemento <hr> */
+  border: none; /* Remove a borda do elemento <hr> */
+  height: 2px; /* Define a altura do elemento <hr> como 2 pixels */
+  background-color: rgb(
+    30,
+    30,
+    65
+  ); /* Define a cor de fundo do elemento <hr> como um tom de azul escuro */
+  width: 100vw; /* Define a largura do elemento <hr> como 100% da largura da janela de visualização */
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 20px;
-  margin-top: 30px;
+  display: flex; /* Habilita o uso de flexbox para o elemento com a classe .container */
+  flex-direction: column; /* Define a direção da disposição dos elementos como vertical */
+  align-items: center; /* Centraliza horizontalmente os elementos dentro da classe .container */
+  padding-bottom: 20px; /* Adiciona um espaçamento inferior de 20 pixels */
+  margin-top: 30px; /* Define uma margem superior de 30 pixels */
 }
 
 .text {
-  text-align: center;
-  justify-content: center;
+  text-align: center; /* Alinha o texto centralmente */
+  justify-content: center; /* Centraliza horizontalmente os elementos dentro da classe .text */
 }
 
 .container h1,
 .container h2 {
-  color: white;
-  margin: 0;
+  color: white; /* Define a cor do texto como branco */
+  margin: 0; /* Remove a margem em torno dos elementos <h1> e <h2> dentro da classe .container */
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  padding: 5px;
+  display: flex; /* Habilita o uso de flexbox para o elemento com a classe .form-group */
+  flex-direction: column; /* Define a direção da disposição dos elementos como vertical */
+  align-items: center; /* Centraliza horizontalmente os elementos dentro da classe .form-group */
+  margin-top: 20px; /* Define uma margem superior de 20 pixels */
+  padding: 5px; /* Adiciona um espaçamento interno de 5 pixels */
 }
 
 .input-wrapper {
-  display: flex;
-  align-items: center;
+  display: flex; /* Habilita o uso de flexbox para o elemento com a classe .input-wrapper */
+  align-items: center; /* Centraliza horizontalmente os elementos dentro da classe .input-wrapper */
 }
 
 label {
-  color: white;
-  background-color: red;
-  padding: 9px;
-  margin-left: 5px;
-  border-radius: 2px;
+  color: white; /* Define a cor do texto como branco */
+  background-color: red; /* Define a cor de fundo como vermelho */
+  padding: 9px; /* Adiciona um espaçamento interno de 9 pixels */
+  margin-left: 5px; /* Define uma margem esquerda de 5 pixels */
+  border-radius: 2px; /* Define um raio de borda de 2 pixels, criando cantos arredondados */
 }
 
 .input-wrapper input[type="text"] {
-  background-color: white;
-  color: black;
-  padding: 10px;
-  width: 300px;
-  font-weight: bold;
-  border: none;
-  border-radius: 2px;
+  background-color: white; /* Define a cor de fundo como branco */
+  color: black; /* Define a cor do texto como preto */
+  padding: 10px; /* Adiciona um espaçamento interno de 10 pixels */
+  width: 300px; /* Define a largura do elemento de entrada de texto como 300 pixels */
+  font-weight: bold; /* Define o estilo da fonte como negrito */
+  border: none; /* Remove a borda do elemento de entrada de texto */
+  border-radius: 2px; /* Define um raio de borda de 2 pixels, criando cantos arredondados */
 }
 
 .input-wrapper input[type="text"]::placeholder {
-  color: white;
-  opacity: 0.5;
+  color: white; /* Define a cor do texto de espaços reservados como branco */
+  opacity: 0.5; /* Define a opacidade do texto de espaços reservados como 50% */
 }
 
 .backgrounded {
-  color: white;
-  background-color: rgb(49, 49, 49);
-  padding: 6px;
-  font-weight: bold;
-  border-radius: 2px;
+  color: white; /* Define a cor do texto como branco */
+  background-color: rgb(
+    49,
+    49,
+    49
+  ); /* Define a cor de fundo como um tom de cinza escuro */
+  padding: 6px; /* Adiciona um espaçamento interno de 6 pixels */
+  font-weight: bold; /* Define o estilo da fonte como negrito */
+  border-radius: 2px; /* Define um raio de borda de 2 pixels, criando cantos arredondados */
 }
 
 .container .main-content {
-  display: flex;
-  align-items: center;
+  display: flex; /* Habilita o uso de flexbox para o elemento com a classe .main-content */
+  align-items: center; /* Centraliza horizontalmente os elementos dentro da classe .main-content */
 }
 
 .container .image img {
-  max-width: 80px;
-  height: auto;
-  margin-right: 20px;
+  max-width: 80px; /* Define a largura máxima da imagem como 80 pixels */
+  height: auto; /* Mantém a proporção da altura da imagem conforme a largura é ajustada */
+  margin-right: 20px; /* Define uma margem direita de 20 pixels */
 }
 
 .container .text-content p {
-  color: white;
-  text-align: left;
-  margin: 0;
+  color: white; /* Define a cor do texto como branco */
+  text-align: left; /* Alinha o texto à esquerda */
+  margin: 0; /* Remove a margem em torno do elemento <p> dentro da classe .text-content */
 }
 
 .container .main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Habilita o uso de flexbox para o elemento com a classe .main-content */
+  justify-content: center; /* Centraliza horizontalmente os elementos dentro da classe .main-content */
+  align-items: center; /* Centraliza verticalmente os elementos dentro da classe .main-content */
 }
 
 footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  font-size: 10px;
+  display: grid; /* Habilita o uso de grid para o elemento <footer> */
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Cria uma grade com 4 colunas de largura igual */
+  font-size: 10px; /* Define o tamanho da fonte como 10 pixels */
 }
 
 footer p {
-  margin-right: 150px;
+  margin-right: 150px; /* Define uma margem direita de 150 pixels para o elemento <p> dentro do <footer> */
 }
-
