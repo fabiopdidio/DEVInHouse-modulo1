@@ -1,7 +1,3 @@
-.root{
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
   margin: 0 auto;
   display: flex;
@@ -11,6 +7,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: whitesmoke;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -21,11 +18,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 5px grey;
 }
-.imagem-carta {
-  width: 100px;
-  height: auto;
-  margin-bottom: 20px;
-}
+
 input {
   width: 80%;
   padding: 10px;
@@ -37,17 +30,12 @@ input {
   text-align: center;
   margin-bottom: 8px;
 }
+
 input:focus {
   outline: 2px solid lightskyblue;
   text-align: center;
 }
-.formulario {
-  margin-bottom: 10px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .button {
   background-color: #6558f5;
   color: white;
@@ -61,4 +49,9 @@ input:focus {
 }
 button:hover {
   background-color: #5a4fd7;
+}
+.imagem-caminhao {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
 }
