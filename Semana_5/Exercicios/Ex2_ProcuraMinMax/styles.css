@@ -22,23 +22,6 @@ body {
   box-shadow: rgb(197, 196, 196) 2px 2px;
 }
 
-button {
-  width: 100px;
-  background-color: blueviolet;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  margin-top: 12px;
-}
-
-input {
-  width: 180px;
-  border-radius: 5px;
-  padding: 4px; 
-  border: solid black 1px;
-}
-
 img {
   width: 100px;
 }

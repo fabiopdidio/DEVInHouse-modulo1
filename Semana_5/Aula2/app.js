@@ -10,64 +10,53 @@
 //hahahaDeRaioLaser = "batata";
 //console.log(hahahaDeRaioLaser);
 
-console.log("m1s05a2");
+/* console.log("m1s05a2");
+ */
+/* Variável com texto*/
+/* const texto = "texto";
+console.log(texto); */
 
-// VARIAVEL SIMPLES
-const texto = "casa";
-//console.log(texto);
+/* Variável com vetor(array)*/
+/* const vetor = ["arroz", "feijao", "batata"];
+console.log(vetor); */
 
-// VARIAVEIS COMPOSTAS
+/* Mostrando só um elemento de uma variável com vetor(array)*/
+/* const vetor = ["arroz", "feijao", "batata"];
+console.log(vetor[0]); */
 
-// VETORES/ARRAYS
-// índice: index, idx, i
-// inicializa um vetor
-const vetor = ["arroz", "laranja", "feijao"];
-// adiciona itens
-vetor.push("batata");
-// altera item do indice 1
-vetor[1] = "cenoura";
-// mostra todo
+//const vetor = ["arroz", "feijao", "batata"];
+//vetor.push("carne") /* Acrescentar mais um elemento ao vetor*/
+//vetor[0] = "aipim" /* Troca um elemento ao vetor*/
 //console.log(vetor);
-// acessa item do indice 2
-//console.log(vetor[2]);
-// mostra comprimento
-//console.log(vetor.length);
-// acessa o ultimo item
-//console.log(vetor[vetor.length - 1]);
-//console.log(vetor.at(-1));
+//console.log(vetor.length); /*Diz quantos elementos tem no vetor*/
 
 const matrix = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
 ];
-// acessa o número 5
-//console.log(matrix[1][1]);
+console.log(matrix[0][0]); /*Acessa dado epecífico*/
 
-// EXEMPLO OBJETOS
-// par chave-valor/key-value
-// cria um objeto
-const qqrnome = { bla: 33 };
-// acrescenta mais um par chave-valor
-qqrnome.ble = 66;
-// acessa o valor da chave bla
-//console.log(qqrnome.bla);
+//OBJETOS:
 
-// exemplo estrutura de array com objetos
+const qqrnome = { bla: 33 }; //Cria objeto
+qqrnome.ble = 66; //Acrescenta na chave-valor
+console.log(qqrnome.bla); //Acessa valor na chave bla
+
+//array com objeto:
 const listaPessoas = [
   {
     id: 1,
-    nome: "Romeu",
-    profissao: "programador",
+    nome: "Fabio",
+    profissao: "Nutricionista",
   },
   {
     id: 2,
-    nome: "Isaac",
-    profissao: "mentor",
+    nome: "Didio",
+    profissao: "Estudante",
   },
 ];
-// acessa nome da segunda pessoa
-//console.log(listaPessoas[1].nome);
+console.log(listaPessoas[1].profissao);
 
 // ESCOPO
 // escopo de funcao

@@ -1,59 +1,49 @@
-console.log("m1s05a1");
+console.log("m1205a1"); //Mostra no console
 
-// exemplo
-// f(x, y) = x * 2 - y
-// f(2, 3) = 2 * 2 - 3
-// f(2, 3) = 4 - 3
-// f(2, 3) = 1
+/* Exemplo de função básica
+f(x) = x * 2
+f(2) = 2 * 2
+f(2) = 4 */
 
-function f(x, y) {
-  const resultado = x * 2 - y;
-  return resultado;
+/* Mesmo exemplo de cima mas com a sintaxe do js
+function f(x) {
+  const calculo = x * 2;
+  return calculo;
 }
+const resultado = f(2);
+console.log(resultado); */
 
-const retorno = f(2, 3);
-//console.log(retorno);
+/* Exemplo de função matematica com 2 números
+f(x, y) = x * 2 - y
+f(2, 3) = 2 * 2 - 3
+f(2, 3) = 4 - 3
+f(2, 3) = 1 */
 
-// exemplo função efemera
+/* Mesmo exemplo de cima mas com a sintaxe do js*/
+function f(x, y) {
+  const calculo = x * 2 - y;
+  return calculo;
+}
+const resultado = f(2, 3);
+console.log(resultado);
+
+/* Exemplo de funcao efemera/anonima (raramente utilizado) */
 (function () {
-  //console.log("Funcao de uso unico!");
+  console.log("Executou a funcao");
 })();
 
-// comparação arrow function
-function funcaoComum(a) {
-  return "Funcao comum. " + a;
-}
-
-//console.log(funcaoComum("Romeu"));
-
-const funcaoArrow = (a) => {
-  return "Funcao arrow. " + a;
+/* Funcao Arrow nao tem palavra function*/
+funcaoArrow = () => {
+  console.log("Funcao Arrow");
 };
-// equivalente a
-//const funcaoArrow = a => "Funcao arrow. " + a;
-//console.log(funcaoArrow("Isaac"));
+funcaoArrow();
 
-function executaEssa(funcaoExterna) {
-  const retorno = funcaoExterna(3);
-  console.log(retorno);
-}
+/* Exemplo de funcao arrow*/
+funcaoArrow = (a) => {
+  return "Funcao arow. " + a;
+};
+console.log(funcaoArrow("fabio"));
 
-// exemplo equivalencias
-// funcao comum passada por parametro
-executaEssa(function (a) {
-  return a * 2;
-});
-// arrow funcation passada por parametro
-executaEssa((a) => a * 2);
-
-// maneira depreciada de declarar variaveis
-var a = 5; // pode ser reatribuida
-
-// padrao atual de declaração de variáveis
-const b = 6; // não pode ser reatribuida
-let c = 7; // pode ser reatribuida
-
-a = 9;
-c = 8;
-
-console.log(a, b, c);
+/* Funcao Arrow simplificada */
+funcaoArrow = (a) => "Funcao Arrow. " + a;
+console.log(funcaoArrow("fabio"));
