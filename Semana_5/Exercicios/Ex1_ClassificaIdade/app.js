@@ -1,7 +1,7 @@
 function classificaIdade(idade) { // Inicializa funcao
   if (idade <= 15) { // Verifica se a pessoa tem ate 15 anos
     alert("Pessoa Jovem"); // Se verdadeiro, mostra mensagem
-  } else if (idade >= 16 && idade <= 64) { // Verifica se pessoa tem entre 16 e 64 anos
+  } else if (idade <= 64) { // Verifica se pessoa tem entre 16 e 64 anos
     alert("Pessoa Adulta"); // Se verdadeiro, mostra mensagem
   } else { // Se nao corresponder as outras condicoes
     alert("Pessoa Idosa"); // Mostra mensagem

@@ -1,21 +1,9 @@
 function procuraMinMax(array) {
-  if (array.length === 0) {
-    return "Nao foi possivel encontrar";
-  }
-  let menor = array[0];
-  let maior = array[0];
-
-  for (let i = 1; i < array.length; i++) {
-    if (array[i] < menor) {
-      menor = array[i];
-    }
-    if (array[i] > maior) {
-      maior = array[i];
-    }
-  }
+  let min = Math.min(...array);
+  let max = Math.max(...array);
   return {
-    menor: menor,
-    maior: maior,
+    menor: min,
+    maior: max,
   };
 }
 
@@ -25,4 +13,8 @@ const numeros = prompt(
 const numerosArray = numeros.split(",").map((array) => parseInt(array.trim()));
 const resultado = procuraMinMax(numerosArray);
 
-alert("Menor valor: " + resultado.menor + ", Maior valor: " + resultado.maior);
+if (resultado.menor !== undefined && resultado.maior !== undefined) {
+  alert("Menor valor: " + resultado.menor + ", Maior valor: " + resultado.maior);
+} else {
+  alert("Não é possível encontrar");
+}
