@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-color: white;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  padding: 50px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: rgb(197, 196, 196) 2px 2px;
+}
+
+img {
+  width: 100px;
+}
