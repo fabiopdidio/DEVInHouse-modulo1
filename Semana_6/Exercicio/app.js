@@ -40,7 +40,6 @@ document
         passwordInput.style.border = "1px solid red";
       }
       event.preventDefault();
-
     } else {
       const usuarioEncontrado = usuarios.find(function (usuario) {
         return (
@@ -50,10 +49,8 @@ document
       });
 
       if (usuarioEncontrado) {
-        // Usuário encontrado, realizar o login
-        window.location.href = "reserva.html";
+        window.location.href = "reservas.html";
       } else {
-        // Usuário não encontrado, exibir mensagem de erro
         alert("Email ou senha inválidos");
       }
     }
