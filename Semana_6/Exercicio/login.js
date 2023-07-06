@@ -29,8 +29,8 @@ const usuarios = [
 document
   .getElementById("loginForm")
   .addEventListener("submit", function (event) {
-    var emailInput = document.getElementById("email");
-    var passwordInput = document.getElementById("password");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
 
     if (!emailInput.value || !passwordInput.value) {
       if (!emailInput.value) {
@@ -49,7 +49,7 @@ document
       });
 
       if (usuarioEncontrado) {
-        window.location.href = "reservas.html";
+        window.location.href = "login.html";
       } else {
         alert("Email ou senha inválidos");
       }
