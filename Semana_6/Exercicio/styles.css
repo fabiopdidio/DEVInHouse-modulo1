@@ -86,7 +86,6 @@ input {
   margin-bottom: 15px;
 }
 
-
 .button:hover {
   background-color: rgb(248, 78, 106);
 }
@@ -102,4 +101,5 @@ table {
   height: 120px;
   text-align: center;
   font-size: 14px;
+  border-collapse: collapse;
 }

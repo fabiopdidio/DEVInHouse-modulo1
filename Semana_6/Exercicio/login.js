@@ -41,7 +41,8 @@ document
       }
       event.preventDefault();
     } else {
-      const usuarioEncontrado = usuarios.find(function (usuario) { // Procura se está na const usuarios
+      const usuarioEncontrado = usuarios.find(function (usuario) {
+        // Procura se está na const usuarios
         return (
           usuario.email === emailInput.value &&
           usuario.senha === passwordInput.value
