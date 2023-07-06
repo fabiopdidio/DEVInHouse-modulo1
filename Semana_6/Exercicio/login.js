@@ -50,7 +50,7 @@ document
       });
 
       if (usuarioEncontrado) {
-        window.location.href = "home.html"; // Se usuário e senha estiverem corretos direciona para home
+        window.location.href = "./home.html"; // Se usuário e senha estiverem corretos direciona para home
       } else {
         alert("Email ou senha inválidos"); // Se errar dados, um alert aparece
       }
