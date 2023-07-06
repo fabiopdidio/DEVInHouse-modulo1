@@ -6,7 +6,6 @@ body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
   background-color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .imagem-perfil {
@@ -75,6 +74,30 @@ input {
   width: 250px;
 }
 
-button:hover {
+.button-logout {
+  background-color: rgb(253, 93, 119);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 15px;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+
+.button:hover {
   background-color: rgb(248, 78, 106);
+}
+
+.tabela-cabecalho {
+  background-color: black;
+  color: white;
+}
+
+.tabela {
+  margin-top: 15px;
+  border-radius: 5px;
 }
