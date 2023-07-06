@@ -41,12 +41,11 @@ input:focus {
 
 input {
   width: 250px;
-  margin-top: 8px;
+  margin-top: 30px;
   padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-top: 30px;
 }
 
 .label-container {
@@ -97,7 +96,10 @@ input {
   color: white;
 }
 
-.tabela {
+table {
   margin-top: 15px;
   border-radius: 5px;
+  height: 120px;
+  text-align: center;
+  font-size: 14px;
 }
