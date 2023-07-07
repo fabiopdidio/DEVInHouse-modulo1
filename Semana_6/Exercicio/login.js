@@ -26,33 +26,32 @@ const usuarios = [
   },
 ];
 
-document
-  .getElementById("loginForm")
-  .addEventListener("submit", function (event) {
-    const emailInput = document.getElementById("email");
-    const passwordInput = document.getElementById("password");
+const form = document.getElementById("loginForm");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    if (!emailInput.value || !passwordInput.value) {
-      if (!emailInput.value) {
-        emailInput.style.border = "1px solid red"; // Adiciona borda vermelha
-      }
-      if (!passwordInput.value) {
-        passwordInput.style.border = "1px solid red"; // Adiciona borda vermelha
-      }
-      event.preventDefault();
-    } else {
-      const usuarioEncontrado = usuarios.find(function (usuario) {
-        // Procura se está na const usuarios
-        return (
-          usuario.email === emailInput.value &&
-          usuario.senha === passwordInput.value
-        );
-      });
+  const emailInput = document.getElementById("email");
+  const passwordInput = document.getElementById("password");
 
-      if (usuarioEncontrado) {
-        window.location.href = "home.html"; // Se usuário e senha estiverem corretos direciona para home
-      } else {
-        alert("Email ou senha inválidos"); // Se errar dados, um alert aparece
-      }
+  if (!emailInput.value || !passwordInput.value) {
+    if (!emailInput.value) {
+      emailInput.style.border = "1px solid red";
     }
-  });
+    if (!passwordInput.value) {
+      passwordInput.style.border = "1px solid red";
+    }
+  } else {
+    const usuarioEncontrado = usuarios.find(function (usuario) {
+      return (
+        usuario.email === emailInput.value &&
+        usuario.senha === passwordInput.value
+      );
+    });
+
+    if (usuarioEncontrado) {
+      window.location.href = "home.html";
+    } else {
+      alert("Email ou senha inválidos");
+    }
+  }
+});
