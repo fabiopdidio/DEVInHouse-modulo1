@@ -8,11 +8,15 @@ body {
   background-color: whitesmoke;
 }
 
+/* IMAGEM */
+
 .imagem-perfil {
   width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
+
+/* CONTAINER E FORM */
 
 .container {
   display: flex;
@@ -26,11 +30,6 @@ body {
   margin-top: -50px;
 }
 
-input:focus {
-  outline: 2px solid lightskyblue;
-  text-align: center;
-}
-
 .formulario {
   margin-bottom: 10px;
   width: 100%;
@@ -39,6 +38,8 @@ input:focus {
   align-items: center;
 }
 
+/* INPUT E LABEL */
+
 input {
   width: 250px;
   margin-top: 30px;
@@ -46,6 +47,11 @@ input {
   border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+input:focus {
+  outline: 2px solid lightskyblue;
+  text-align: center;
 }
 
 .label-container {
@@ -60,6 +66,8 @@ input {
   color: black;
   font-weight: bold;
 }
+
+/* BOTAO */
 
 .button-login {
   background-color: rgb(253, 93, 119);
@@ -90,6 +98,8 @@ input {
   background-color: rgb(248, 78, 106);
 }
 
+/* TABELA */
+
 .tabela-cabecalho {
   background-color: black;
   color: white;
@@ -103,3 +113,8 @@ table {
   font-size: 14px;
   border-collapse: collapse;
 }
+
+tr:nth-child(even) {
+  background-color: gainsboro;
+}
+
