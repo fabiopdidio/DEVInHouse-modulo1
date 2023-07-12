@@ -5,13 +5,20 @@ class Fatura {
     this.quantia = quantia;
     this.preco = preco;
 
+    if (this.quantia <= 0) {
+      this.quantia = 0;
+    }
+
+    if (this.preco <= 0) {
+      this.preco = 0;
+    }
   }
-  promover(percentual) {
-    const aumento = this.salario * (percentual / 100);
-    this.salario += aumento;
+
+  obterValorTotal() {
+    return this.quantia * this.preco;
   }
 }
-const ada = new Colaborador("528.442.040-31", "Ada Lovelace", 1000);
-console.log(ada.salario); // 1000
-ada.promover(50);
-console.log(ada.salario); // 1500
+
+const melao = new Fatura(123, "Melão", 2, 3);
+const valor = melao.obterValorTotal();
+console.log(valor); // 6
