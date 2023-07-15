@@ -1,15 +1,4 @@
-class Personagem {
-  constructor(nome, percentualVida) {
-    this.nome = nome;
-    this.percentualVida = 100;
-  }
-  sofreuDano(percentualDano) {
-    this.percentualVida -= percentualDano;
-  }
-  usouKitMedico() {
-    this.percentualVida += 10;
-  }
-}
+import Personagem from "./Personagem.js";
 
 const alyx = new Personagem("Alyx");
 console.log(alyx.percentualVida); // 100
