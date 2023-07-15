@@ -1,20 +1,5 @@
-class Animal {
-  constructor(nome, idade, som) {
-    this.nome = nome;
-    this.idade = idade;
-    this.som = som;
-  }
-}
-class Cachorro extends Animal {
-  constructor(nome, idade) {
-    super(nome, idade, "latido");
-  }
-}
-class Gato extends Animal {
-  constructor(nome, idade) {
-    super(nome, idade, "miado");
-  }
-}
+import Cachorro from "./Cachorro.js";
+import Gato from "./Gato.js";
 
 const snoopy = new Cachorro("snoopy", 10);
 console.log(snoopy.som); // "latido"
