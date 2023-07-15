@@ -1,0 +1,20 @@
+body {
+  background-color: wheat;
+  color: black;
+  font-family: monospace;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+main {
+  margin: 0px auto;
+  width: 400px;
+}
