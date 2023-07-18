@@ -118,3 +118,9 @@ tr:nth-child(even) {
   background-color: gainsboro;
 }
 
+select {
+  width: 250px;
+  height: 35px;
+  border-radius: 5px;
+}
+
