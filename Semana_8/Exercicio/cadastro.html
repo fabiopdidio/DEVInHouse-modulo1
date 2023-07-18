@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>M1S06</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Reservar</h2>
+      <form class="formulario" id="cadastroForm">
+        <div class="label-container">
+          <label for="quarto">Quarto</label>
+          <br><br>
+          <select id="quarto">
+            <option value="">Selecione um quarto</option>
+            <option value="quarto1">Quarto 1</option>
+            <option value="quarto2">Quarto 2</option>
+            <option value="quarto3">Quarto 3</option>
+          </select>
+        </div>        
+        <div class="label-container">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Nome completo" />
+        </div>
+        <div class="label-container">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" placeholder="CPF" />
+        </div>
+        <div class="label-container">
+          <label for="data-inicio">Data Início</label>
+          <input type="date" id="data-inicio" />
+        </div>
+        <div class="label-container">
+          <label for="data-inicio">Data Término</label>
+          <input type="date" id="data-termino" />
+        </div>
+        <button class="button-login" type="submit" id="login">Login</button>
+      </form>
+      <script src="./scripts/cadastro.js"></script>
+    </div>
+  </body>
+</html>
