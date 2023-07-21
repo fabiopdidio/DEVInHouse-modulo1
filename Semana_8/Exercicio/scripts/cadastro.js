@@ -5,37 +5,19 @@ const inicioInput = document.getElementById("data-inicio");
 const terminoInput = document.getElementById("data-termino");
 
 function validarCampos() {
-  if (nomeInput.value === "") {
-    quartoInput.style.border = "1px solid red";
-  } else {
-    quartoInput.style.border = ""; // Remove a borda vermelha se o campo estiver preenchido
-  }
-  if (nomeInput.value === "") {
-    nomeInput.style.border = "1px solid red";
-  } else {
-    nomeInput.style.border = ""; // Remove a borda vermelha se o campo estiver preenchido
-  }
+  // Funcao para deixar a borda do campo vermelha caso esteja vazia.
+  const campos = [nomeInput, quartoInput, cpfInput, inicioInput, terminoInput]; // Var com todos campos.
 
-  if (cpfInput.value === "") {
-    cpfInput.style.border = "1px solid red";
-  } else {
-    cpfInput.style.border = "";
-  }
-
-  if (inicioInput.value === "") {
-    inicioInput.style.border = "1px solid red";
-  } else {
-    inicioInput.style.border = "";
-  }
-
-  if (terminoInput.value === "") {
-    terminoInput.style.border = "1px solid red";
-  } else {
-    terminoInput.style.border = "";
-  }
+  campos.forEach((input) => {
+    // Para cada campo input verficia se está vazia ou não, se vazia, deixa borda vermelha.
+    if (input.value === "") {
+      input.style.border = "1px solid red";
+    } else {
+      input.style.border = "";
+    }
+  });
 }
 
-// Evento de validação quando o formulário é enviado
 const formulario = document.getElementById("cadastroForm");
 formulario.addEventListener("submit", function (event) {
   event.preventDefault(); // Impede o envio do formulário para demonstração
