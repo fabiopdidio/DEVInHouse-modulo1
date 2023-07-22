@@ -106,7 +106,7 @@ input:focus {
   width: 250px;
 }
 
-.button:hover {
+button:hover {
   background-color: rgb(248, 78, 106);
 }
 

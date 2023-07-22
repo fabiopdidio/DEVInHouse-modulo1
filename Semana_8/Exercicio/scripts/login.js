@@ -1,31 +1,4 @@
-const usuarios = [
-  {
-    email: "joao@gmail.com",
-    nome: "João Silva",
-    senha: "123456",
-  },
-  {
-    email: "maria@hotmail.com",
-    nome: "Maria Souza",
-    senha: "senha123",
-  },
-  {
-    email: "pedro@yahoo.com",
-    nome: "Pedro Oliveira",
-    senha: "abc123",
-  },
-  {
-    email: "laura@gmail.com",
-    nome: "Laura Santos",
-    senha: "qwerty",
-  },
-  {
-    email: "gabriel@yahoo.com",
-    nome: "Gabriel Costa",
-    senha: "senha12345",
-  },
-];
-
+import { usuarios } from '../constantes/usuarios.js'
 
 const form = document.getElementById("loginForm");
 form.addEventListener("submit", function (event) {
@@ -50,7 +23,7 @@ form.addEventListener("submit", function (event) {
     });
 
     if (usuarioEncontrado) {
-      window.location.href = "home.html";
+      window.location.href = "../home.html";
     } else {
       alert("Email ou senha inválidos");
     }
