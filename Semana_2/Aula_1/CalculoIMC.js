@@ -1,8 +1,8 @@
 /* Cálculo do IMC com if/else if/else mostrando atual situação ao usuário*/
 
-var peso = Number(prompt("Digite seu peso"));
-var altura = Number(prompt("Digite sua altura"));
-var imc = peso / (altura * altura);
+let peso = Number(prompt("Digite seu peso"));
+let altura = Number(prompt("Digite sua altura"));
+let imc = peso / (altura * altura);
 
 console.log(imc);
 
