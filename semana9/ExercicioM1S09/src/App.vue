@@ -1,10 +1,20 @@
 <template>
-  <div></div>
+  <div>
+    <Header />
+    <h1>Farmácia</h1>
+  </div>
 </template>
 
 <script>
+import Header from './components/Header.vue';
+
 export default {
-  data() {},
+  components: {
+    Header,
+  },
+  data() {
+    return {};
+  },
 };
 </script>
 
