@@ -1,26 +1,25 @@
 <template>
   <!-- utilizando o componente -->
   <Card>
-    <template v-slot:header>
-      <h1>Titulo do meu card</h1>
+    <template #header>
+      <h1>Carro novo da Ferrari</h1>
     </template>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, rem
-      harum debitis animi ducimus expedita numquam autem nostrum, voluptatum
-      suscipit dolorum unde vel eaque dolorem doloremque sunt. Ea, sit dicta.
-    </p>
-    <template #footer>
-      <h6>Created by Fábio Didio</h6>
+    <template #imagem>
+      <img
+        :width="200"
+        src="https://media.formula1.com/content/dam/fom-website/sutton/2022/Brazil/Friday/1440800084.jpg"
+        alt=""
+      />
     </template>
   </Card>
 </template>
 
 <script>
-// importando componente
+// importando o componente
 import Card from "./components/Card.vue";
 
 export default {
-  // registrando componente
+  // registrando o componente
   components: {
     Card,
   },
