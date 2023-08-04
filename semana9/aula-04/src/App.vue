@@ -1,47 +1,48 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    <img src="" alt="" width="" height="" />
+    <h1>Lista de cursos</h1>
+    <!-- O v-bind (:) é uma diretiva que nos permite
+    passar valores Javascript dentro das props -->
+    <CursoItem
+      v-for="(curso, index) in listaCursos"
+      :key="index"
+      :titulo="curso.titulo"
+      :duracao="curso.duracao"
+      :vagas="curso.vagas"
+    />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script>
+import CursoItem from "./components/CursoItem.vue";
+export default {
+  components: {
+    CursoItem,
+  },
+  data() {
+    return {
+      listaCursos: [
+        {
+          titulo: "HTML e CSS",
+          duracao: 30,
+          vagas: 40,
+        },
+        {
+          titulo: "Javascript",
+          duracao: 20,
+          vagas: 40,
+        },
+        {
+          titulo: "PHP",
+          duracao: 20,
+          vagas: 40,
+        },
+      ],
+    };
+  },
+  methods: {},
+};
+</script>
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped></style>
