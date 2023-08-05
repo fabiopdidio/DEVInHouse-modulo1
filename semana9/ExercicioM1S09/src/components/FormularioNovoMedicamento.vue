@@ -25,7 +25,7 @@
       v-model="preco"
     />
 
-    <button @click="$emit('cadastrar')">Cadastrar novo</button>
+    <button @click="$emit('cadastrar')" class="button">Cadastrar novo</button>
   </div>
 </template>
 
@@ -40,3 +40,14 @@ export default {
   },
 };
 </script>
+
+<style>
+.button {
+  background-color: rgb(83, 82, 82);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 3px;
+  margin-left: 4px;
+}
+</style>
