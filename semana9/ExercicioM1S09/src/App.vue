@@ -1,16 +1,17 @@
 <template>
-  <div>
-    <Header />
-    <FormularioNovoMedicamento @cadastrar="cadastrarMedicamento" />
-    <div class="container">
-      <CardMedicamento
-        @favoritar="FavoritarMedicamento"
-        nome="Dipirona"
-        laboratorio="Clamed"
-        preco="5,00"
-        id="1"
-      />
-    </div>
+  <Header />
+  <FormularioNovoMedicamento @cadastrar="AdicionarMedicamento" />
+  <div class="container">
+    <CardMedicamento
+      v-if="!!listaMedicamentos"
+      v-for="medicamento in listaMedicamentos"
+      :key="medicamento.id"
+      @favoritar="FavoritarMedicamento"
+      :nome="medicamento.nome"
+      :laboratorio="medicamento.laboratorio"
+      :preco="medicamento.preco"
+      :id="medicamento.id"
+    />
   </div>
 </template>
 
@@ -41,7 +42,7 @@ export default {
         return;
       }
       const novoMedicamento = {
-        id: uuidv4, //uuidv4 gera um id aleatório
+        id: uuidv4(), //uuidv4 gera um id aleatório
         nome: nome,
         laboratorio: laboratorio,
         preco: preco,
@@ -50,7 +51,11 @@ export default {
       this.listaMedicamentos.push(novoMedicamento); // adiciona o novo medicamento na lista
     },
     FavoritarMedicamento(id) {
-      alert(id);
+      this.listaMedicamentos = this.listaMedicamentos.map((item) => {
+        if (item.id == id) {
+          item.favorito = !item.favorito;
+        }
+      });
     },
   },
 };

@@ -1,6 +1,7 @@
 <template>
   <div class="card">
     <button @click="$emit('favoritar', id)">Favoritar</button>
+    <span v-if="favorito">Favorito</span>
     <img
       :width="120"
       src="https://cdn-icons-png.flaticon.com/512/994/994920.png"
@@ -25,6 +26,5 @@ export default {
   width: calc(100% / 4) -2em;
   margin: 1em;
   background-color: #c4c4c4;
-  align-items: center;
 }
 </style>
