@@ -24,7 +24,7 @@
       placeholder="Informe o preço"
       v-model="preco"
     />
-
+    <!-- Adiciona evento de clique ao botão e vincula parâmetros-->
     <button @click="$emit('cadastrar', medicamento, laboratorio, preco)" class="button">Cadastrar novo</button>
   </div>
 </template>
