@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Formulário de cadastro de medicamentos</h2>
-    <label for="nome">Nome:</label>
+    <label for="nome">Nome</label>
     <input
       type="text"
       id="nome"
@@ -17,7 +17,7 @@
       v-model="laboratorio"
     />
 
-    <label for="nome">Preco</label>
+    <label for="nome">Preço</label>
     <input
       type="text"
       id="number"
