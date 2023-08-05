@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="formulario">
     <h2>Formulário de cadastro de medicamentos</h2>
     <label for="nome">Nome</label>
     <input
@@ -25,7 +25,7 @@
       v-model="preco"
     />
 
-    <button @click="$emit('cadastrar')" class="button">Cadastrar novo</button>
+    <button @click="$emit('cadastrar', medicamento, laboratorio, preco)" class="button">Cadastrar novo</button>
   </div>
 </template>
 
@@ -49,5 +49,9 @@ export default {
   border-radius: 2px;
   padding: 3px;
   margin-left: 4px;
+}
+.formulario {
+  margin-left: 10px;
+  margin-top: 10px;
 }
 </style>
