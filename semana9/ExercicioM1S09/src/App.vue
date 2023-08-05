@@ -15,7 +15,9 @@ export default {
     FormularioNovoMedicamento,
   },
   data() {
-    return {};
+    return {
+      listaMedicamentos: [],
+    };
   },
   methods: {
     cadastrarMedicamento() {},
