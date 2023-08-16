@@ -43,7 +43,7 @@ export default {
 
 <style>
 .button {
-  background-color: rgb(101, 100, 100);
+  background-color: rgb(70, 70, 70);
   color: white;
   border: none;
   border-radius: 2px;
