@@ -1,6 +1,9 @@
 <template>
   <div>
     <Header />
+    <main>
+      <router-view></router-view>
+    </main>
     <FormularioNovoMedicamento @cadastrar="adicionarMedicamento" />
     <div class="container">
       <CardMedicamento
