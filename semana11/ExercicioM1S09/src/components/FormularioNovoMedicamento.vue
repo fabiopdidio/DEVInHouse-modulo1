@@ -32,9 +32,11 @@
           v-model="preco"
         />
       </div>
-      <button class="col-1 btn btn-primary mt-3" @click="adicionarMedicamento">
-      Cadastrar
-    </button>
+      <div class="col-md-4 mb-3">
+        <button class="btn btn-primary mt-3" @click="$emit('cadastrar', medicamento, laboratorio, preco)">
+          Cadastrar
+        </button>
+      </div>
     </div>
   </div>
 </template>

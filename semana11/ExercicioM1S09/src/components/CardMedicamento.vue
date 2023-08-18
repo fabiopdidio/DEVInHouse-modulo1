@@ -1,15 +1,17 @@
 <template>
-  <div class="card">
-    <button @click="$emit('favoritar', id)">Favoritar</button>
-    <span v-if="favorito">Favorito</span>
+  <div class="card row ms-5 mt-3" style="width: 18rem;">
     <img
-      :width="120"
       src="https://cdn-icons-png.flaticon.com/512/994/994920.png"
-      alt="imagem do medicamento"
+      class="card-img-top"
+      alt="Imagem do medicamento"
     />
-    <span>Nome: {{ nome }}</span>
-    <span>Laboratorio: {{ laboratorio }}</span>
-    <span>Preço: {{ preco }}</span>
+    <div class="card-body">
+      <button @click="$emit('favoritar', id)" class="btn btn-primary">Favoritar</button>
+      <span v-if="favorito" class="badge bg-success">Favorito</span>
+      <h5 class="card-title">{{ nome }}</h5>
+      <p class="card-text">Laboratório: {{ laboratorio }}</p>
+      <p class="card-text">Preço: {{ preco }}</p>
+    </div>
   </div>
 </template>
 
@@ -20,11 +22,4 @@ export default {
 </script>
 
 <style scoped>
-.card {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% / 4) -2em;
-  margin: 1em;
-  background-color: #c4c4c4;
-}
 </style>

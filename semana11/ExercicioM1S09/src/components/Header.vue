@@ -1,32 +1,22 @@
 <template>
-  <header class="header">
+  <header class="header bg-light d-flex align-items-center p-3">
     <img
-      class="logo"
-      src="https://d6ce0no7ktiq.cloudfront.net/images/preview/2020/03/03/design-61468/template-sticker-600x600.png"
+      class="logo me-2"
+      src="https://www.drogariatotal.com.br/pub/media/wysiwyg/drogariatotal/logo_centro.png"
       alt="Logo da Empresa"
+      style="width: 50px; height: 50px;"
     />
-    <h1>Farmácia Z</h1>
+    <h1 class="h3">Farmácia Z</h1>
   </header>
 </template>
 
 <script>
 export default {
-  data() {},
+  data() {
+    return {}
+  },
 };
 </script>
 
-<style>
-.header {
-  display: flex;
-  align-items: center;
-  padding: 10px 2em;
-  width: 100vw;
-  background-color: #e2e2e2;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
+<style scoped>
 </style>
