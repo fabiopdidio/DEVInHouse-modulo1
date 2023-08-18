@@ -1,33 +1,45 @@
 <template>
-  <div class="formulario">
-    <h2>Formulário de cadastro de medicamentos</h2>
-    <label for="nome">Nome</label>
-    <input
-      type="text"
-      id="nome"
-      placeholder="Informe o nome do medicamento"
-      v-model="medicamento"
-    />
-
-    <label for="laboratorio">Laboratório</label>
-    <input
-      type="text"
-      id="laboratorio"
-      placeholder="Informe o nome do laboratório"
-      v-model="laboratorio"
-    />
-
-    <label for="nome">Preço</label>
-    <input
-      type="text"
-      id="number"
-      placeholder="Informe o preço"
-      v-model="preco"
-    />
-    <!-- Adiciona evento de clique ao botão e vincula parâmetros-->
-    <button @click="$emit('cadastrar', medicamento, laboratorio, preco)" class="button">Cadastrar novo</button>
+  <div>
+    <div class="row ms-5 me-5 mt-5">
+      <h3>Formulário de cadastro de medicamentos</h3>
+      <div class="col-md-4 mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input
+          type="text"
+          placeholder="Informe o nome do medicamento"
+          id="nome"
+          class="form-control"
+          v-model="medicamento"
+        />
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="laboratorio" class="form-label">Laboratório</label>
+        <input
+          type="text"
+          placeholder="Informe o nome do laboratório"
+          id="laboratorio"
+          class="form-control"
+          v-model="laboratorio"
+        />
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="preco" class="form-label">Preço</label>
+        <input
+          type="number"
+          placeholder="Informe o preço do medicamento"
+          id="preco"
+          class="form-control"
+          v-model="preco"
+        />
+      </div>
+      <button class="col-1 btn btn-primary mt-3" @click="adicionarMedicamento">
+      Cadastrar
+    </button>
+    </div>
   </div>
 </template>
+
+<!--<button @click="$emit('cadastrar', medicamento, laboratorio, preco)" class="button">Cadastrar novo</button>-->
 
 <script>
 export default {
@@ -41,17 +53,4 @@ export default {
 };
 </script>
 
-<style>
-.button {
-  background-color: rgb(70, 70, 70);
-  color: white;
-  border: none;
-  border-radius: 2px;
-  padding: 3px;
-  margin-left: 4px;
-}
-.formulario {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-</style>
+<style></style>
