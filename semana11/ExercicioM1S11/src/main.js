@@ -1,7 +1,11 @@
 import "./assets/main.css";
 
+// Importa Vue
 import { createApp } from "vue";
 import App from "./App.vue";
+
+// rotas
+import { routes } from "@/router/routes.js";
 
 // Configuração do vuetify
 import "vuetify/styles"; // Importa estilos
@@ -17,4 +21,4 @@ const vuetify = createVuetify({
   icons: { defaultSet: "mdi" },
 });
 
-createApp(App).use(vuetify).mount("#app");
+createApp(App).vue(routes).use(vuetify).mount("#app");
