@@ -1,19 +1,19 @@
-import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "../pages/Home.vue"; // Iporta aqui as páginas
-import FormularioNovoMedicamento from "../pages/FormMedicamentos.vue";
+import {createRouter, createWebHashHistory} from 'vue-router'
+import Home from "../pages/Home.vue"
+import FormMedicamento from "../pages/FormMedicamentos.vue"
 
-export const routes = createRouter({ // exportar para ficar acessível
+export const routes = createRouter({
   history: createWebHashHistory(),
-  routes: [ // Configuração das rotas
+  routes: [
     {
-      path: "/", // path = caminho ("/" é a página inicial)
-      name: "home",
-      component: Home,
+      path: '/', // Define caminho da página inicial
+      name: 'home',
+      component: Home
     },
     {
-      path: "/novo-medicamento",
-      name: "novo-medicamento",
-      component: FormularioNovoMedicamento,
-    },
-  ],
-});
+      path: '/novo-medicamento', // Define caminho para novos medicamentos
+      name: 'novo-medicamento',
+      component: FormMedicamento
+    }
+  ]
+})

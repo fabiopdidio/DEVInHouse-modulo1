@@ -1,24 +1,24 @@
 import "./assets/main.css";
 
-// Importa Vue
 import { createApp } from "vue";
 import App from "./App.vue";
 
 // rotas
 import { routes } from "@/router/routes.js";
 
-// Configuração do vuetify
-import "vuetify/styles"; // Importa estilos
-import "@mdi/font/css/materialdesignicons.css"; // Importa ícones do mdi
+// configuração do Vuetify
+import "vuetify/styles";
+import "@mdi/font/css/materialdesignicons.css";
 import { createVuetify } from "vuetify";
-import * as components from "vuetify/components"; // Importa todos componentes do vuetify
-import * as directives from "vuetify/directives"; // Importa todas diretivas do vuetify
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
 
 const vuetify = createVuetify({
-  // Cria uma variável com todas importações
   components,
   directives,
-  icons: { defaultSet: "mdi" },
+  icons: {
+    defaultSet: "mdi",
+  },
 });
 
 createApp(App).use(routes).use(vuetify).mount("#app");
