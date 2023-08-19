@@ -1,6 +1,5 @@
 <template>
   <Header />
-  <FormularioNovoMedicamento @cadastrar="AdicionarMedicamento" />
   <div class="container">
     <CardMedicamento
       v-if="!!listaMedicamentos"
@@ -13,19 +12,17 @@
       :id="medicamento.id"
     />
   </div>
+  <router-view></router-view>
 </template>
 
 <script>
 // importar todos componentes
-import { v4 as uuidv4 } from "uuid";
 import Header from "./components/Header.vue";
-import FormularioNovoMedicamento from "./components/FormularioNovoMedicamento.vue";
 import CardMedicamento from "./components/CardMedicamento.vue";
 
 export default {
   components: {
     Header,
-    FormularioNovoMedicamento,
     CardMedicamento,
   },
   data() {
@@ -35,27 +32,12 @@ export default {
     };
   },
   methods: {
-    AdicionarMedicamento(nome, laboratorio, preco) {
-      //adicionar validações para avisar o usuario a não deixar dados vazios
-      if (nome == "" || laboratorio == "" || preco == 0) {
-        alert("Preencha todos os dados");
-        return;
-      }
-      const novoMedicamento = {
-        id: uuidv4(), //uuidv4 gera um id aleatório
-        nome: nome,
-        laboratorio: laboratorio,
-        preco: preco,
-        favorito: false,
-      };
-      this.listaMedicamentos.push(novoMedicamento); // adiciona o novo medicamento na lista
-    },
     FavoritarMedicamento(id) {
       this.listaMedicamentos = this.listaMedicamentos.map((item) => {
         if (item.id == id) {
           item.favorito = !item.favorito;
         }
-        return item
+        return item;
       });
     },
   },

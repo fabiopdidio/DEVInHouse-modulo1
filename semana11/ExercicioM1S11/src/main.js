@@ -21,4 +21,4 @@ const vuetify = createVuetify({
   icons: { defaultSet: "mdi" },
 });
 
-createApp(App).vue(routes).use(vuetify).mount("#app");
+createApp(App).use(routes).use(vuetify).mount("#app");
