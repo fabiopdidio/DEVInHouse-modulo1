@@ -1,26 +1,6 @@
-<!--
-  PASSOS PARA CRIAR UM COMPONENTE:
-  - 1 [x] - crie um arquivo dentro da pasta components
-  - 2 [x] - dê o nome ao arquivo usando PascalCase
-    Obs: PascalCase significa que as primeiras letras de cada palavra
-    sempre serão maiúsculas.
-  - 3 [x] - Escreva a estrutura base do arquivo Vue (Single File Component
-  - template | script | style)
-  - 4* [x] - Se for usar props, defina o array de props
-    - 4.1* - [x] Defina onde as props devem ser utilizadas
-    - 5 [x] - importe o componente no local que será utilizado
-    import NomeDoComponente from "./components/NomeDoComponente.vue"
-  - 6 [x] - Registre o componente na propriedade components:
-    components: { // esse fica dentro do export default
-      NomeDoComponente
-    }
-    6.1 [] - Adicione o componente no template no arquivo onde ele foi importado
-  - 7* [] - Se usou props, passe os valores das props para serem utilizados
--->
-
 <template>
   <Transition>
-    <v-card elevation="5" class="ma-3">
+    <v-card elevation="5" class="ma-3"> <!--Adiciona sombra e margem ao card-->
       <template v-slot:title>
         <div class="d-flex justify-end">
           <v-btn
@@ -28,7 +8,7 @@
             :icon="favorito ? 'mdi-heart' : 'mdi-heart-outline'"
             color="pink-lighten-1"
             @click="$emit('favoritar', id)"
-          ></v-btn>
+          ></v-btn> <!--Cria um botão no formato de coração e ao ser clicado muda de cor, também chamando a função-->
         </div>
       </template>
       <v-card-text class="d-flex flex-column">
