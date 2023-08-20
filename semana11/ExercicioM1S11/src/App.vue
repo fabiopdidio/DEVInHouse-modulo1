@@ -1,6 +1,6 @@
 <template>
   <Header /> <!--Deixa Header como componente fixo em todas páginas-->
-  <router-view></router-view>
+  <router-view></router-view> <!--Parte da página que será alterada-->
 </template>
 
 <script>
