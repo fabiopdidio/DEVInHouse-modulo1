@@ -3,10 +3,10 @@ import "./assets/main.css";
 import { createApp } from "vue";
 import App from "./App.vue";
 
-// rotas
+// Configuração do Routes
 import { routes } from "@/router/routes.js";
 
-// configuração do Vuetify
+// Configuração do Vuetify
 import "vuetify/styles";
 import "@mdi/font/css/materialdesignicons.css";
 import { createVuetify } from "vuetify";
@@ -21,4 +21,5 @@ const vuetify = createVuetify({
   },
 });
 
+// Tem que ficar nessa ordem
 createApp(App).use(routes).use(vuetify).mount("#app");
