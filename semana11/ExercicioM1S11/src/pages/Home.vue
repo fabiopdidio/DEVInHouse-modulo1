@@ -5,8 +5,10 @@
         title="Adicionar novo medicamento"
         variant="elevated"
         color="primary"
+        @click="adicionarMedicamento"
         >Adicionar medicamento</v-btn
       >
+      <!--Botão para adicionar medicamento e direcionar para outra página-->
     </router-link>
   </div>
   <div class="d-flex mx-5">

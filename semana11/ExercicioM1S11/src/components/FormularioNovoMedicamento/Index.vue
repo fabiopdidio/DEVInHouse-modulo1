@@ -10,7 +10,7 @@
       v-model="medicamento"
       :rules="[(v) => !!v || 'O nome é obrigatório!']"
       required
-    />
+    /> 
 
     <v-text-field
       label="Laboratório"
@@ -58,6 +58,8 @@ export default {
   },
   methods: {
     async AdicionarMedicamento() {
+      console.log("Método AdicionarMedicamento chamado.");
+
       const { valid } = await this.$refs.form.validate();
 
       if (!valid) {

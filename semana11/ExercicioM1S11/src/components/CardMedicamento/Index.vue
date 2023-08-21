@@ -1,14 +1,16 @@
 <template>
   <Transition>
-    <v-card elevation="5" class="ma-3"> <!--Adiciona sombra e margem ao card-->
+    <v-card elevation="5" class="ma-3">
+      <!--Adiciona sombra e margem ao card-->
       <template v-slot:title>
         <div class="d-flex justify-end">
           <v-btn
             variant="text"
             :icon="favorito ? 'mdi-heart' : 'mdi-heart-outline'"
-            color="pink-lighten-1"
+            color="red-darken-4"
             @click="$emit('favoritar', id)"
-          ></v-btn> <!--Cria um botão no formato de coração e ao ser clicado muda de cor, também chamando a função-->
+          ></v-btn>
+          <!--Cria um botão no formato de coração e ao ser clicado muda de cor, também chamando a função-->
         </div>
       </template>
       <v-card-text class="d-flex flex-column">
@@ -31,5 +33,4 @@ export default {
   props: ["nome", "laboratorio", "preco", "favorito", "id"],
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>
