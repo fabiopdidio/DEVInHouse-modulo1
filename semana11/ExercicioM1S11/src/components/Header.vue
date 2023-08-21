@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <router-link to="/">
-      FARMACIA Z
+      <span class="logo-text"> 💊 FARMACIA Z</span>
     </router-link>
   </header>
 </template>

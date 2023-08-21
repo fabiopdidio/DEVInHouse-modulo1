@@ -16,8 +16,9 @@
       <v-card-text class="d-flex flex-column">
         <img
           :width="120"
-          src="https://dmvfarma.vtexassets.com/arquivos/ids/196865/caixa-medicamento-2021.png?v=637695586068000000"
+          src="https://farmaceuticodigital.com/wp-content/uploads/2016/05/medicamentos1.jpg"
           alt="Imagem do medicamento"
+          class="mb-5"
         />
         <p><span class="font-weight-bold">Nome:</span> {{ nome }}</p>
         <p>

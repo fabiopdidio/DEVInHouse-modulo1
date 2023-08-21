@@ -2,22 +2,20 @@
   <h2 class="titulo-formulario">Formulário de Cadastro de medicamentos</h2>
   <v-form ref="form" class="d-flex mt-5">
     <v-text-field
-      label="Nome"
+      label="Nome do medicamento"
       class="w-25 px-2"
       type="text"
       variant="outlined"
-      placeholder="Nome do medicamento"
       v-model="medicamento"
       :rules="[(v) => !!v || 'O nome é obrigatório!']"
       required
     /> 
 
     <v-text-field
-      label="Laboratório"
+      label="Nome do laboratório"
       class="w-25 px-2"
       type="text"
       variant="outlined"
-      placeholder="Nome do laboratório"
       v-model="laboratorio"
       :rules="[(v) => !!v || 'O nome do laboratório é obrigatório!']"
       required
@@ -28,7 +26,6 @@
       type="number"
       class="w-25 px-2"
       variant="outlined"
-      placeholder="Digite o preço"
       v-model="preco"
       :rules="[(v) => !!v || 'O preço é obrigatório!']"
       required
@@ -36,7 +33,7 @@
 
     <v-btn
       color="primary"
-      class="mt-1 me-2"
+      class="mt-1 me-2 px-2"
       size="large"
       variant="elevated"
       @click="AdicionarMedicamento"
@@ -58,7 +55,7 @@ export default {
   },
   methods: {
     async AdicionarMedicamento() {
-      console.log("Método AdicionarMedicamento chamado.");
+        console.log("Método AdicionarMedicamento chamado.");
 
       const { valid } = await this.$refs.form.validate();
 

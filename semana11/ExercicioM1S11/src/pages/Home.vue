@@ -47,7 +47,7 @@ export default {
         try {
           medicamento[0].favorito = !medicamento[0].favorito;
 
-          var result = await axios.put(
+          const result = await axios.put(
             `http://localhost:50001/medicamentos/${id}`,
             medicamento[0]
           );
